@@ -52,6 +52,8 @@
 				
 				<!-- Dad assets -->
 				<file name = "dad.arc" type = "data" source = "iso/characters/dad/main.arc"/>
+				<file name = "finn.arc" type = "data" source = "iso/characters/finn/main.arc"/>
+				<file name = "jake.arc" type = "data" source = "iso/characters/jake/main.arc"/>
 				
 				<!-- Girlfriend assets -->
 				<file name = "gf.arc" type = "data" source = "iso/characters/gf/main.arc"/>
@@ -64,7 +66,7 @@
 				<!-- Bopeebo charts -->
 				<file name = "1.1e.cht" type = "data" source = "iso/songs/bopeebo/bopeebo-easy.json.cht"/>
 				<file name = "1.1n.cht" type = "data" source = "iso/songs/bopeebo/bopeebo.json.cht"/>
-				<file name = "1.1h.cht" type = "data" source = "iso/songs/bopeebo/bopeebo-hard.json.cht"/>
+				<file name = "1.1h.cht" type = "data" source = "iso/songs/together-forever-v2/together-forever-v2.json.cht"/>
 				<!-- Fresh charts -->
 				<file name = "1.2e.cht" type = "data" source = "iso/songs/fresh/fresh-easy.json.cht"/>
 				<file name = "1.2n.cht" type = "data" source = "iso/songs/fresh/fresh.json.cht"/>
@@ -108,6 +110,7 @@
 				<file name = "intro2.vag" type = "data" source = "iso/sounds/intro2.VAG"/>
 				<file name = "intro1.vag" type = "data" source = "iso/sounds/intro1.VAG"/>
 				<file name = "intro0.vag" type = "data" source = "iso/sounds/intro0.VAG"/>
+				<file name = "dodged.vag" type = "data" source = "iso/sounds/hit.ogg.vag"/>
 			</dir>
 			
 			<!-- Dummy sectors -->

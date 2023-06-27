@@ -3,6 +3,8 @@ all: \
 	iso/characters/bf/low.arc \
 	\
 	iso/characters/dad/main.arc \
+	iso/characters/finn/main.arc \
+	iso/characters/jake/main.arc \
 	\
 	iso/characters/gf/main.arc \
 	iso/characters/gf/tut.arc \
@@ -38,3 +40,10 @@ iso/characters/gf/tut.arc: iso/characters/gf/tut0.tim iso/characters/gf/tut1.tim
 
 # Default
 iso/stages/default/back.arc: iso/stages/default/back0.tim iso/stages/default/back1.tim
+
+# Finn
+iso/characters/finn/main.arc: iso/characters/finn/idle0.tim iso/characters/finn/idle1.tim iso/characters/finn/idle2.tim iso/characters/finn/idle3.tim iso/characters/finn/idle4.tim iso/characters/finn/left0.tim iso/characters/finn/left1.tim iso/characters/finn/left2.tim iso/characters/finn/left3.tim iso/characters/finn/left4.tim iso/characters/finn/left5.tim iso/characters/finn/down0.tim iso/characters/finn/down1.tim iso/characters/finn/down2.tim iso/characters/finn/down3.tim iso/characters/finn/down4.tim iso/characters/finn/down5.tim iso/characters/finn/down6.tim iso/characters/finn/down7.tim iso/characters/finn/up0.tim iso/characters/finn/up1.tim iso/characters/finn/up2.tim iso/characters/finn/up3.tim iso/characters/finn/up4.tim iso/characters/finn/up5.tim iso/characters/finn/right0.tim iso/characters/finn/right1.tim iso/characters/finn/right2.tim iso/characters/finn/right3.tim iso/characters/finn/right4.tim iso/characters/finn/right5.tim iso/characters/finn/right6.tim 
+
+# Jake
+iso/characters/jake/main.arc: iso/characters/jake/idle0.tim iso/characters/jake/idle1.tim iso/characters/jake/idle2.tim iso/characters/jake/idle3.tim iso/characters/jake/idle4.tim iso/characters/jake/left0.tim iso/characters/jake/left1.tim iso/characters/jake/left2.tim iso/characters/jake/left3.tim iso/characters/jake/left4.tim iso/characters/jake/down0.tim iso/characters/jake/down1.tim iso/characters/jake/down2.tim iso/characters/jake/down3.tim iso/characters/jake/down4.tim iso/characters/jake/up0.tim iso/characters/jake/up1.tim iso/characters/jake/up2.tim iso/characters/jake/up3.tim iso/characters/jake/up4.tim iso/characters/jake/up5.tim iso/characters/jake/up6.tim iso/characters/jake/right0.tim iso/characters/jake/right1.tim iso/characters/jake/right2.tim iso/characters/jake/right3.tim 
+

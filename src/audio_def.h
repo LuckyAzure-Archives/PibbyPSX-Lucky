@@ -11,7 +11,7 @@ static const XA_TrackDef xa_tracks[] = {
 	{XA_Menu, XA_LENGTH(11300)}, //XA_GettinFreaky
 	{XA_Menu, XA_LENGTH(3800)},  //XA_GameOver
 	//1.XA
-	{XA_1, XA_LENGTH(7700)}, //XA_Bopeebo
+	{XA_1, XA_LENGTH(28548)}, //XA_Bopeebo
 	{XA_1, XA_LENGTH(8000)}, //XA_Fresh
 	//2.XA
 	{XA_2, XA_LENGTH(8700)}, //XA_Dadbattle

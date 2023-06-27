@@ -27,7 +27,7 @@ struct Section
 #define NOTE_FLAG_SUSTAIN_END (1 << 4) //Is either end of sustain
 #define NOTE_FLAG_ALT_ANIM    (1 << 5) //Note plays alt animation
 #define NOTE_FLAG_MINE        (1 << 6) //Note is a mine
-#define NOTE_FLAG_BULLET      (1 << 7) //Note is a bullet
+#define NOTE_FLAG_SWORD       (1 << 7) //Note is a bullet
 #define NOTE_FLAG_HIT         (1 << 8) //Note has been hit
 
 struct Note
@@ -125,16 +125,24 @@ int main(int argc, char *argv[])
 		//Read notes
 		for (auto &j : i["sectionNotes"])
 		{
+			if(j[1] == -1)
+				break;
+			
 			//Push main note
 			Note new_note;
-			int sustain = (int)PosRound(j[2], step_crochet) - 1;
+			
+			int sustain;
+			if(j[2].is_string())
+				sustain = (int)PosRound(0, step_crochet) - 1;
+			else
+				sustain = (int)PosRound(j[2], step_crochet) - 1;
 			new_note.pos = (step_base * 12) + PosRound(((double)j[0] - milli_base) * 12.0, step_crochet);
 			new_note.type = (uint8_t)j[1] & (3 | NOTE_FLAG_OPPONENT);
 			if (is_opponent)
 				new_note.type ^= NOTE_FLAG_OPPONENT;
-			if (j[3] == true)
-				new_note.type |= NOTE_FLAG_ALT_ANIM;
-			else if ((new_note.type & NOTE_FLAG_OPPONENT) && is_alt)
+			if (j[3] == "Sword")
+				new_note.type |= NOTE_FLAG_SWORD;
+			else if (j[3] == "Alt Animation")
 				new_note.type |= NOTE_FLAG_ALT_ANIM;
 			if (sustain >= 0)
 				new_note.type |= NOTE_FLAG_SUSTAIN_END;

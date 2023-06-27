@@ -24,10 +24,8 @@ void Load_Events()
 
 void Events()
 {
-	event.shake = lerp(event.shake,0,FIXED_DEC(2,10));
+	event.shake = fixed_lerp(event.shake,0,FIXED_DEC(2,10));
 	FollowCharCamera();
-	//if(stage.prefs.followcamera)
-	//	FollowCharCamera();
 }
 
 void Events_Front()
@@ -78,18 +76,26 @@ void FollowCharCamera()
 
 void NoteHitEvent(u8 type)
 {
-
+	if (type & NOTE_FLAG_SWORD)
+	{
+		event.shake = FIXED_DEC(10,1);
+		Audio_PlaySound(stage.sounds[6], 0x1fff);
+		stage.opponent->set_anim(stage.opponent, CharAnim_Right);
+	}
 }
 
 void NoteHitEnemyEvent(u8 type)
 {
-	
+
 }
 
 void NoteMissEvent(u8 type, u8 state)
 {
 	PlayerState *this = &stage.player_state[state];
-	if (type & NOTE_FLAG_BULLET)
+	if (type & NOTE_FLAG_SWORD)
+	{
 		this->health = -0x7000;
+		Audio_PlaySound(stage.sounds[6], 0x1fff);
+	}
 }
 

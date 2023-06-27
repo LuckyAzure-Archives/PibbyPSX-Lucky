@@ -26,21 +26,21 @@
 			"hname"   : "Up"
 		}
 	],
-	"input":  "iso/characters/niku/niku",
-	"outdir": "iso/characters/niku/",
-	"charname" : "Niku",
+	"input":  "iso/characters/jake/jake",
+	"outdir": "iso/characters/jake/",
+	"charname" : "Jake",
 	"optimize" : false,
-	"optimizename" : "Aldryx",
+	"optimizename" : "Jake",
 	"arcname" : "ArcMain",
 	"vrampos" : [
-		448, 
+		512, 
 		256, 
 		0, 
-		481
+		484
 	],
 
 	"bpp" : 4,
-	"resize" : 0.18,
+	"resize" : 0.25,
 	"xmlscale" : 1.0,
 	"padding" : 1,
 	"max_width" : 256,
